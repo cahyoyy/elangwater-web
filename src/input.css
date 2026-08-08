@@ -1,0 +1,276 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Custom CSS Variables */
+:root {
+  --primary-blue: #2563EB;
+  --secondary-blue: #1E40AF;
+  --light-blue: #EFF6FF;
+  --text-dark: #1F2937;
+  --text-gray: #6B7280;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply bg-white antialiased;
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+    color: var(--text-dark);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+    color: var(--text-dark);
+  }
+
+  p {
+    @apply leading-relaxed;
+    color: var(--text-gray);
+  }
+
+  img {
+    @apply block max-w-full h-auto;
+  }
+
+  button {
+    @apply transition-all duration-300;
+  }
+}
+
+@layer components {
+
+  .container-max {
+    @apply max-w-7xl mx-auto px-4 md:px-8 lg:px-16;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+    color: var(--text-dark);
+  }
+
+  .section-subtitle {
+    @apply mt-4 text-lg max-w-3xl mx-auto;
+    color: var(--text-gray);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center
+    px-6 py-3
+    rounded-xl
+    text-white
+    font-semibold
+    shadow-sm
+    hover:shadow-lg
+    transition-all
+    duration-300;
+    background-color: var(--primary-blue);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--secondary-blue);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center
+    px-6 py-3
+    rounded-xl
+    border
+    font-semibold
+    hover:bg-light-blue
+    transition-all
+    duration-300;
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--light-blue);
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center gap-2
+    px-4 py-2 md:px-6 md:py-3
+    rounded-lg
+    font-medium
+    bg-green-500
+    text-white
+    hover:bg-green-600
+    transition-colors;
+  }
+
+  .card {
+    @apply bg-white
+    rounded-xl
+    border
+    border-slate-100
+    p-6
+    transition-all
+    duration-300
+    hover:shadow-lg;
+  }
+
+  .glass-navbar {
+    @apply bg-white/95 backdrop-blur-md border-b border-slate-100;
+  }
+
+  /* Product card styles */
+  .product-card {
+    @apply bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden cursor-pointer;
+  }
+
+  .product-card:hover .product-image {
+    @apply scale-110;
+  }
+
+  /* FAQ styles */
+  .faq-item {
+    @apply bg-white rounded-lg overflow-hidden shadow-sm;
+  }
+
+  .faq-button {
+    @apply w-full px-6 py-4 flex justify-between items-center hover:bg-light-blue transition-colors;
+  }
+
+  .faq-answer {
+    @apply px-6 pb-4;
+    color: var(--text-gray);
+  }
+
+  /* Category tab styles */
+  .category-tab {
+    @apply px-6 py-2 rounded-full whitespace-nowrap font-semibold transition-colors;
+  }
+
+  /* Custom utility classes */
+  .bg-primary-blue {
+    background-color: var(--primary-blue);
+  }
+
+  .bg-secondary-blue {
+    background-color: var(--secondary-blue);
+  }
+
+  .bg-light-blue {
+    background-color: var(--light-blue);
+  }
+
+  .text-primary-blue {
+    color: var(--primary-blue);
+  }
+
+  .text-secondary-blue {
+    color: var(--secondary-blue);
+  }
+
+  .text-light-blue {
+    color: var(--light-blue);
+  }
+
+  .text-text-dark {
+    color: var(--text-dark);
+  }
+
+  .text-text-gray {
+    color: var(--text-gray);
+  }
+
+  .border-primary-blue {
+    border-color: var(--primary-blue);
+  }
+
+  .border-secondary-blue {
+    border-color: var(--secondary-blue);
+  }
+
+  .border-light-blue {
+    border-color: var(--light-blue);
+  }
+}
+
+@layer utilities {
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-brand-gradient {
+    background: linear-gradient(
+      135deg,
+      var(--primary-blue) 0%,
+      var(--secondary-blue) 100%
+    );
+  }
+
+  /* Gradient backgrounds */
+  .bg-gradient-to-br {
+    background-image: linear-gradient(to bottom right, var(--light-blue), white);
+  }
+
+  .bg-gradient-to-r {
+    background-image: linear-gradient(to right, var(--primary-blue), var(--secondary-blue));
+  }
+}
+
+
+/* Animation for counters */
+@keyframes counter-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.counter {
+  animation: counter-up 0.6s ease-out forwards;
+}
+
+/* Responsive improvements */
+@media (max-width: 640px) {
+  .section-padding {
+    @apply py-12;
+  }
+  
+  .container-max {
+    @apply px-4;
+  }
+}
+
+/* Swiper customizations */
+.swiper-pagination-bullet {
+  @apply bg-primary-blue !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-secondary-blue !important;
+}
+
+/* AOS custom animations */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}

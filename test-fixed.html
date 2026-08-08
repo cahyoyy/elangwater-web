@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Perbaikan - Elang Water</title>
+  <link rel="stylesheet" href="./dist/output.css">
+  <style>
+    :root {
+      --primary-blue: #2563EB;
+      --secondary-blue: #1E40AF;
+      --light-blue: #EFF6FF;
+      --text-dark: #1F2937;
+      --text-gray: #6B7280;
+    }
+  </style>
+</head>
+<body class="bg-white p-8">
+  <div class="container-max">
+    <h1 class="text-3xl font-bold mb-8 text-text-dark">Test Perbaikan Tampilan Elang Water</h1>
+    
+    <div class="space-y-6">
+      <!-- Test Button Styles -->
+      <div class="border p-6 rounded-xl">
+        <h2 class="text-xl font-bold mb-4 text-text-dark">Button Styles</h2>
+        <div class="flex flex-wrap gap-4">
+          <button class="btn-primary px-6 py-3 rounded-xl">Primary Button</button>
+          <button class="btn-secondary px-6 py-3 rounded-xl">Secondary Button</button>
+          <button class="btn-whatsapp px-6 py-3 rounded-lg">WhatsApp Button</button>
+        </div>
+      </div>
+      
+      <!-- Test Color Variables -->
+      <div class="border p-6 rounded-xl">
+        <h2 class="text-xl font-bold mb-4 text-text-dark">Color Variables</h2>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div class="bg-primary-blue p-4 rounded-lg text-white text-center">Primary Blue</div>
+          <div class="bg-secondary-blue p-4 rounded-lg text-white text-center">Secondary Blue</div>
+          <div class="bg-light-blue p-4 rounded-lg text-text-dark text-center">Light Blue</div>
+          <div class="text-text-dark p-4 rounded-lg bg-gray-100 text-center">Text Dark</div>
+          <div class="text-text-gray p-4 rounded-lg bg-gray-100 text-center">Text Gray</div>
+        </div>
+      </div>
+      
+      <!-- Test Container Styles -->
+      <div class="border p-6 rounded-xl">
+        <h2 class="text-xl font-bold mb-4 text-text-dark">Container & Spacing</h2>
+        <div class="section-padding bg-light-blue rounded-xl">
+          <p class="text-lg text-text-gray">Section Padding Test - This should have proper padding for mobile and desktop.</p>
+          <div class="container-max bg-white p-6 rounded-lg mt-4">
+            <p class="text-text-dark">Container Max Width Test - This should be properly centered with max-width.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Test Gradients -->
+      <div class="border p-6 rounded-xl">
+        <h2 class="text-xl font-bold mb-4 text-text-dark">Gradient Backgrounds</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-gradient-to-br from-light-blue to-white p-8 rounded-xl">
+            <p class="text-text-dark">Light Blue to White Gradient</p>
+          </div>
+          <div class="bg-gradient-to-r from-primary-blue to-secondary-blue p-8 rounded-xl text-white">
+            <p>Primary to Secondary Blue Gradient</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Test Typography -->
+      <div class="border p-6 rounded-xl">
+        <h2 class="text-xl font-bold mb-4 text-text-dark">Typography</h2>
+        <div class="space-y-4">
+          <h1 class="text-4xl font-bold text-text-dark">Heading 1 - Text Dark</h1>
+          <h2 class="text-3xl font-bold text-text-dark">Heading 2 - Text Dark</h2>
+          <h3 class="text-2xl font-bold text-text-dark">Heading 3 - Text Dark</h3>
+          <p class="text-lg text-text-gray">Paragraph text with text-gray color and leading-relaxed.</p>
+          <p class="text-text-gray">Normal paragraph text with text-gray color.</p>
+        </div>
+      </div>
+      
+      <!-- Test Product Card -->
+      <div class="border p-6 rounded-xl">
+        <h2 class="text-xl font-bold mb-4 text-text-dark">Product Card Component</h2>
+        <div class="product-card max-w-xs">
+          <div class="bg-light-blue h-48 flex items-center justify-center overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=300&h=300&fit=crop" alt="Test Product" class="w-full h-full object-cover transition duration-300 product-image">
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-text-dark mb-1">Test Product</h3>
+            <p class="text-sm text-text-gray mb-3">500ml x 12 Botol</p>
+            <button class="w-full btn-primary text-sm py-2">
+              Tanya Harga
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-8 pt-8 border-t">
+      <p class="text-text-gray text-center">Test selesai. Semua komponen CSS seharusnya terlihat dengan baik.</p>
+      <div class="text-center mt-4">
+        <a href="index.html" class="btn-primary px-6 py-3 rounded-xl">Kembali ke Halaman Utama</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

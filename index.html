@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elang Water - Distributor Air Minum Kemasan Malang</title>
+  <meta name="description" content="Distributor air minum kemasan terlengkap di Malang dengan 100+ produk dari 30+ merek, harga kompetitif, dan pengiriman cepat setiap hari.">
+  
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="./dist/output.css">
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  
+  <!-- Placeholder untuk Lucide Icons (akan dimuat nanti di script) -->
+  
+  <style>
+    :root {
+      --primary-blue: #2563EB;
+      --secondary-blue: #1E40AF;
+      --light-blue: #EFF6FF;
+      --text-dark: #1F2937;
+      --text-gray: #6B7280;
+    }
+    
+    body {
+      font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+      color: var(--text-dark);
+    }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- ============== SECTION 1: HEADER ============== -->
+  <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-primary-blue rounded-lg flex items-center justify-center">
+          <span class="text-white font-bold text-lg">E</span>
+        </div>
+        <span class="font-bold text-lg text-text-dark hidden sm:inline">Elang Water</span>
+      </div>
+      
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-8 text-text-gray font-medium">
+        <li><a href="#beranda" class="hover:text-primary-blue transition">Beranda</a></li>
+        <li><a href="#produk" class="hover:text-primary-blue transition">Produk</a></li>
+        <li><a href="#testimoni" class="hover:text-primary-blue transition">Testimoni</a></li>
+        <li><a href="#tentang" class="hover:text-primary-blue transition">Tentang Kami</a></li>
+        <li><a href="#faq" class="hover:text-primary-blue transition">FAQ</a></li>
+        <li><a href="#kontak" class="hover:text-primary-blue transition">Kontak</a></li>
+      </ul>
+      
+      <!-- CTA Button WhatsApp -->
+      <a href="https://wa.me/6285256781234" class="hidden sm:flex btn-whatsapp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+      
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden" id="mobile-menu-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t">
+      <div class="px-4 py-4 space-y-4">
+        <a href="#beranda" class="block text-text-gray hover:text-primary-blue font-medium">Beranda</a>
+        <a href="#produk" class="block text-text-gray hover:text-primary-blue font-medium">Produk</a>
+        <a href="#testimoni" class="block text-text-gray hover:text-primary-blue font-medium">Testimoni</a>
+        <a href="#tentang" class="block text-text-gray hover:text-primary-blue font-medium">Tentang Kami</a>
+        <a href="#faq" class="block text-text-gray hover:text-primary-blue font-medium">FAQ</a>
+        <a href="#kontak" class="block text-text-gray hover:text-primary-blue font-medium">Kontak</a>
+        <a href="https://wa.me/6285256781234" class="block btn-whatsapp justify-center mt-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>Hubungi WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============== SECTION 2: HERO ============== -->
+  <section id="beranda" class="section-padding bg-gradient-to-br from-light-blue to-white">
+    <div class="container-max ">
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <!-- Text Content -->
+        <div data-aos="fade-up">
+          <h1 class="text-4xl md:text-5xl font-bold text-text-dark mb-6 leading-tight">
+            Distributor Air Minum Kemasan Terlengkap di Malang
+          </h1>
+          <p class="text-lg text-text-gray mb-8 leading-relaxed">
+            Menyediakan berbagai merek air mineral, minuman kemasan, dan kebutuhan minuman usaha dengan harga kompetitif dan pengiriman cepat.
+          </p>
+          
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 mb-12">
+            <a href="https://wa.me/6285256781234" class="btn-primary text-center">
+              Pesan via WhatsApp
+            </a>
+            <a href="#produk" class="btn-secondary text-center">
+              Lihat Produk
+            </a>
+          </div>
+          
+          <!-- Statistics -->
+          <div class="grid grid-cols-2 md:grid-cols-2 gap-6">
+            <div class="p-4 bg-white rounded-lg shadow-sm">
+              <div class="text-3xl font-bold text-primary-blue mb-2">
+                <span data-count="100">0</span>+
+              </div>
+              <p class="text-text-gray font-medium">Produk</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-sm">
+              <div class="text-3xl font-bold text-primary-blue mb-2">
+                <span data-count="30">0</span>+
+              </div>
+              <p class="text-text-gray font-medium">Merek</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-sm">
+              <div class="text-3xl font-bold text-primary-blue mb-2">
+                <span data-count="1000">0</span>+
+              </div>
+              <p class="text-text-gray font-medium">Pelanggan</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-sm">
+              <div class="text-3xl font-bold text-primary-blue mb-2">Setiap Hari</div>
+              <p class="text-text-gray font-medium">Pengiriman</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Image/Video Placeholder -->
+        <div data-aos="fade-left" class="relative">
+          <div class="bg-light-blue rounded-2xl aspect-square flex items-center justify-center overflow-hidden shadow-lg">
+            <img src="assets/images/hero-images.png" alt="Elang Water Warehouse" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 3: BRAND CAROUSEL ============== -->
+  <section class="section-padding bg-white">
+    <div class="container-max">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-text-dark mb-4" data-aos="fade-up">
+        Brand yang Tersedia
+      </h2>
+      <p class="text-center text-text-gray mb-12 text-lg" data-aos="fade-up">
+        30+ merek ternama dengan kualitas terjamin
+      </p>
+      
+      <div class="swiper brand-swiper" data-aos="fade-up">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide flex justify-center items-center">
+      <div class="bg-light-blue rounded-lg p-6 w-full h-32 flex items-center justify-center">
+        <img src="assets/logo/aqua.png" alt="Aqua" class="w-32 h-12 object-contain">
+      </div>
+    </div>
+      <div class="swiper-slide flex justify-center items-center">
+        <div class="bg-light-blue rounded-lg p-6 w-full h-32 flex items-center justify-center">
+          <img src="assets/logo/leminerale.jpeg" alt="Le Minerale" class="max-w-full max-h-full object-contain">
+            </div>
+          </div>
+        <div class="swiper-slide flex justify-center items-center">
+      <div class="bg-light-blue rounded-lg p-6 w-full h-32 flex items-center justify-center font-semibold text-text-gray">
+              Club
+            </div>
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="bg-light-blue rounded-lg p-6 w-full h-32 flex items-center justify-center font-semibold text-text-gray">
+              Cleo
+            </div>
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="bg-light-blue rounded-lg p-6 w-full h-32 flex items-center justify-center font-semibold text-text-gray">
+              Ades
+            </div>
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="bg-light-blue rounded-lg p-6 w-full h-32 flex items-center justify-center font-semibold text-text-gray">
+              Vit
+            </div>
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="bg-light-blue rounded-lg p-6 w-full h-32 flex items-center justify-center font-semibold text-text-gray">
+              Crystalline
+            </div>
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="bg-light-blue rounded-lg p-6 w-full h-32 flex items-center justify-center font-semibold text-text-gray">
+              Tulus
+            </div>
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="bg-light-blue rounded-lg p-6 w-full h-32 flex items-center justify-center font-semibold text-text-gray">
+              Nestle
+            </div>
+          </div>
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="bg-light-blue rounded-lg p-6 w-full h-32 flex items-center justify-center font-semibold text-text-gray">
+              Amidis
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 4: KATALOG PRODUK ============== -->
+  <section id="produk" class="section-padding bg-gray-50">
+    <div class="container-max">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-text-dark mb-4" data-aos="fade-up">
+        Katalog Produk
+      </h2>
+      <p class="text-center text-text-gray mb-12 text-lg" data-aos="fade-up">
+        Pilih dari ratusan produk berkualitas
+      </p>
+      
+      <!-- Kategori Tabs -->
+      <div class="flex overflow-x-auto gap-2 mb-12 pb-4" data-aos="fade-up">
+        <button class="category-tab px-6 py-2 rounded-full whitespace-nowrap font-semibold text-white bg-primary-blue" data-category="all">
+          Semua
+        </button>
+        <button class="category-tab px-6 py-2 rounded-full whitespace-nowrap font-semibold text-text-gray bg-white border-2 border-gray-200 hover:border-primary-blue transition" data-category="air-mineral">
+          Air Mineral
+        </button>
+        <button class="category-tab px-6 py-2 rounded-full whitespace-nowrap font-semibold text-text-gray bg-white border-2 border-gray-200 hover:border-primary-blue transition" data-category="air-galon">
+          Air Galon
+        </button>
+        <button class="category-tab px-6 py-2 rounded-full whitespace-nowrap font-semibold text-text-gray bg-white border-2 border-gray-200 hover:border-primary-blue transition" data-category="teh">
+          Teh Kemasan
+        </button>
+        <button class="category-tab px-6 py-2 rounded-full whitespace-nowrap font-semibold text-text-gray bg-white border-2 border-gray-200 hover:border-primary-blue transition" data-category="isotonik">
+          Minuman Isotonik
+        </button>
+        <button class="category-tab px-6 py-2 rounded-full whitespace-nowrap font-semibold text-text-gray bg-white border-2 border-gray-200 hover:border-primary-blue transition" data-category="kopi">
+          Kopi Siap Minum
+        </button>
+      </div>
+      
+      <!-- Product Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" data-aos="fade-up">
+        <!-- Product Card 1 -->
+        <div class="product-card bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden cursor-pointer group" data-category="air-mineral">
+          <div class="bg-light-blue h-48 flex items-center justify-center overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=300&h=300&fit=crop" alt="Air Mineral" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-text-dark mb-1">Aqua Mineral</h3>
+            <p class="text-sm text-text-gray mb-3">600ml x 24 Botol</p>
+            <button class="w-full btn-primary text-sm py-2">
+              Tanya Harga
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden cursor-pointer group" data-category="air-mineral">
+          <div class="bg-light-blue h-48 flex items-center justify-center overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1554681032-1fd5b9c6211d?w=300&h=300&fit=crop" alt="Le Minerale" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-text-dark mb-1">Le Minerale</h3>
+            <p class="text-sm text-text-gray mb-3">330ml x 24 Botol</p>
+            <button class="w-full btn-primary text-sm py-2">
+              Tanya Harga
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden cursor-pointer group" data-category="teh">
+          <div class="bg-light-blue h-48 flex items-center justify-center overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1599599810694-b3d299ca72e0?w=300&h=300&fit=crop" alt="Teh Siap Minum" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-text-dark mb-1">Teh Sosro</h3>
+            <p class="text-sm text-text-gray mb-3">250ml x 24 Kaleng</p>
+            <button class="w-full btn-primary text-sm py-2">
+              Tanya Harga
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden cursor-pointer group" data-category="isotonik">
+          <div class="bg-light-blue h-48 flex items-center justify-center overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1609615892854-0dafacffc093?w=300&h=300&fit=crop" alt="Minuman Isotonik" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-text-dark mb-1">Pocari Sweat</h3>
+            <p class="text-sm text-text-gray mb-3">500ml x 24 Botol</p>
+            <button class="w-full btn-primary text-sm py-2">
+              Tanya Harga
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="product-card bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden cursor-pointer group" data-category="kopi">
+          <div class="bg-light-blue h-48 flex items-center justify-center overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1599599810964-d2683f1b9a1e?w=300&h=300&fit=crop" alt="Kopi Siap Minum" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-text-dark mb-1">Kopi ABC</h3>
+            <p class="text-sm text-text-gray mb-3">250ml x 24 Kotak</p>
+            <button class="w-full btn-primary text-sm py-2">
+              Tanya Harga
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="product-card bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden cursor-pointer group" data-category="air-mineral">
+          <div class="bg-light-blue h-48 flex items-center justify-center overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=300&h=300&fit=crop" alt="Crystal" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-text-dark mb-1">Crystalline</h3>
+            <p class="text-sm text-text-gray mb-3">1500ml x 12 Botol</p>
+            <button class="w-full btn-primary text-sm py-2">
+              Tanya Harga
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 7 -->
+        <div class="product-card bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden cursor-pointer group" data-category="air-galon">
+          <div class="bg-light-blue h-48 flex items-center justify-center overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1585518419271-78d8a6b9b8d0?w=300&h=300&fit=crop" alt="Air Galon" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-text-dark mb-1">Air Galon</h3>
+            <p class="text-sm text-text-gray mb-3">19 Liter</p>
+            <button class="w-full btn-primary text-sm py-2">
+              Tanya Harga
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Card 8 -->
+        <div class="product-card bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden cursor-pointer group" data-category="teh">
+          <div class="bg-light-blue h-48 flex items-center justify-center overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1599599810694-b3d299ca72e0?w=300&h=300&fit=crop" alt="Teh Botol" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-text-dark mb-1">Teh Botol</h3>
+            <p class="text-sm text-text-gray mb-3">350ml x 24 Botol</p>
+            <button class="w-full btn-primary text-sm py-2">
+              Tanya Harga
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 5: KENAPA MEMILIH ELANG WATER ============== -->
+  <section class="section-padding bg-white">
+    <div class="container-max">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-text-dark mb-4" data-aos="fade-up">
+        Kenapa Memilih Elang Water
+      </h2>
+      <p class="text-center text-text-gray mb-12 text-lg" data-aos="fade-up">
+        6 keunggulan yang membuat kami menjadi pilihan utama
+      </p>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Benefit 1 -->
+        <div class="p-8 bg-light-blue rounded-xl text-center hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-16 h-16 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <path d="M12 2v20m10-10H2"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-text-dark mb-2">Produk Lengkap</h3>
+          <p class="text-text-gray">100+ produk dari 30+ merek ternama tersedia dalam satu tempat</p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="p-8 bg-light-blue rounded-xl text-center hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-16 h-16 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-text-dark mb-2">Harga Kompetitif</h3>
+          <p class="text-text-gray">Harga terbaik di pasaran dengan kualitas terjamin untuk setiap produk</p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="p-8 bg-light-blue rounded-xl text-center hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-16 h-16 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <circle cx="12" cy="12" r="1"></circle><path d="M12 1v6m0 6v6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-text-dark mb-2">Pengiriman Cepat</h3>
+          <p class="text-text-gray">Pengiriman setiap hari ke seluruh area Malang dan sekitarnya</p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="p-8 bg-light-blue rounded-xl text-center hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-16 h-16 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-text-dark mb-2">Stok Stabil</h3>
+          <p class="text-text-gray">Stok produk selalu tersedia dan tidak pernah kosong</p>
+        </div>
+
+        <!-- Benefit 5 -->
+        <div class="p-8 bg-light-blue rounded-xl text-center hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-16 h-16 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-text-dark mb-2">Grosir & Ecer</h3>
+          <p class="text-text-gray">Melayani pembelian grosir untuk bisnis dan ecer untuk kebutuhan pribadi</p>
+        </div>
+
+        <!-- Benefit 6 -->
+        <div class="p-8 bg-light-blue rounded-xl text-center hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-16 h-16 bg-primary-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-text-dark mb-2">Pelayanan Ramah</h3>
+          <p class="text-text-gray">Tim customer service yang responsif dan siap membantu setiap waktu</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 6: SIAPA PELANGGAN KAMI ============== -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-max">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-text-dark mb-4" data-aos="fade-up">
+        Siapa Pelanggan Kami
+      </h2>
+      <p class="text-center text-text-gray mb-12 text-lg" data-aos="fade-up">
+        Dipercaya oleh berbagai sektor bisnis
+      </p>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="text-center p-6 bg-white rounded-lg hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-20 h-20 bg-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+              <path d="M6 9h12M6 9a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3M6 9v8a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V9"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-text-dark">Warung</h3>
+        </div>
+
+        <div class="text-center p-6 bg-white rounded-lg hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-20 h-20 bg-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+              <path d="M9 3L5 7v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-4-4z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-text-dark">Toko</h3>
+        </div>
+
+        <div class="text-center p-6 bg-white rounded-lg hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-20 h-20 bg-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+              <rect x="2" y="7" width="20" height="12" rx="2"></rect>
+              <path d="M12 7V2"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-text-dark">Kantor</h3>
+        </div>
+
+        <div class="text-center p-6 bg-white rounded-lg hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-20 h-20 bg-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+              <path d="M12 2L2 7v5h20V7l-10-5z"></path>
+              <path d="M4 12v8h16v-8"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-text-dark">Sekolah</h3>
+        </div>
+
+        <div class="text-center p-6 bg-white rounded-lg hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-20 h-20 bg-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <h3 class="font-bold text-text-dark">Hotel</h3>
+        </div>
+
+        <div class="text-center p-6 bg-white rounded-lg hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-20 h-20 bg-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-text-dark">Restoran</h3>
+        </div>
+
+        <div class="text-center p-6 bg-white rounded-lg hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-20 h-20 bg-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+              <polyline points="10 17 15 12 10 7"></polyline>
+            </svg>
+          </div>
+          <h3 class="font-bold text-text-dark">Kafe</h3>
+        </div>
+
+        <div class="text-center p-6 bg-white rounded-lg hover:shadow-lg transition" data-aos="fade-up">
+          <div class="w-20 h-20 bg-light-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 6v6l4 2"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-text-dark">Event Organizer</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 7: VIDEO TESTIMONI ============== -->
+  <section id="testimoni" class="section-padding bg-white">
+    <div class="container-max">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-text-dark mb-4" data-aos="fade-up">
+        Video Testimoni Pelanggan
+      </h2>
+      <p class="text-center text-text-gray mb-12 text-lg" data-aos="fade-up">
+        Dengarkan langsung dari pelanggan setia kami
+      </p>
+      
+      <div class="swiper testimonial-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="bg-light-blue rounded-xl overflow-hidden mx-auto max-w-md aspect-square flex flex-col">
+              <div class="flex-1 relative bg-black flex items-center justify-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Testimoni 1" class="w-full h-full object-cover">
+                <button class="absolute w-16 h-16 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition" onclick="alert('Video akan diputar')">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="#2563EB">
+                    <path d="M5 3l14 9-14 9V3z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="p-6 bg-white">
+                <h3 class="font-bold text-text-dark mb-1">Budi Santoso</h3>
+                <p class="text-sm text-text-gray mb-3">Pemilik Warung</p>
+                <p class="text-sm text-text-gray">Sudah 3 tahun jadi pelanggan setia Elang Water. Produknya lengkap, harga kompetitif, dan pengirimannya cepat!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="bg-light-blue rounded-xl overflow-hidden mx-auto max-w-md aspect-square flex flex-col">
+              <div class="flex-1 relative bg-black flex items-center justify-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Testimoni 2" class="w-full h-full object-cover">
+                <button class="absolute w-16 h-16 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition" onclick="alert('Video akan diputar')">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="#2563EB">
+                    <path d="M5 3l14 9-14 9V3z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="p-6 bg-white">
+                <h3 class="font-bold text-text-dark mb-1">Siti Nurhaliza</h3>
+                <p class="text-sm text-text-gray mb-3">Pemilik Toko Kelontong</p>
+                <p class="text-sm text-text-gray">Pelayanannya yang ramah dan responsif membuat saya terus jadi pelanggan. Stoknya juga selalu tersedia!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="bg-light-blue rounded-xl overflow-hidden mx-auto max-w-md aspect-square flex flex-col">
+              <div class="flex-1 relative bg-black flex items-center justify-center overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" alt="Testimoni 3" class="w-full h-full object-cover">
+                <button class="absolute w-16 h-16 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition" onclick="alert('Video akan diputar')">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="#2563EB">
+                    <path d="M5 3l14 9-14 9V3z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="p-6 bg-white">
+                <h3 class="font-bold text-text-dark mb-1">Ahmad Wijaya</h3>
+                <p class="text-sm text-text-gray mb-3">Pemilik Restoran</p>
+                <p class="text-sm text-text-gray">Pengiriman tepat waktu setiap hari, dan harganya sangat kompetitif untuk bisnis F&B seperti kami.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 8: STATISTIK KEPERCAYAAN ============== -->
+  <section class="section-padding bg-gradient-to-r from-primary-blue to-secondary-blue text-white">
+    <div class="container-max">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div data-aos="fade-up">
+          <div class="text-5xl font-bold mb-2">
+            <span class="counter" data-target="1000">0</span>+
+          </div>
+          <p class="text-lg opacity-90">Pelanggan Aktif</p>
+        </div>
+        <div data-aos="fade-up">
+          <div class="text-5xl font-bold mb-2">
+            <span class="counter" data-target="100">0</span>+
+          </div>
+          <p class="text-lg opacity-90">Produk Tersedia</p>
+        </div>
+        <div data-aos="fade-up">
+          <div class="text-5xl font-bold mb-2">
+            <span class="counter" data-target="30">0</span>+
+          </div>
+          <p class="text-lg opacity-90">Merek Tersedia</p>
+        </div>
+        <div data-aos="fade-up">
+          <div class="text-5xl font-bold mb-2">
+            <span class="counter" data-target="98">0</span>%
+          </div>
+          <p class="text-lg opacity-90">Review Positif</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 9: GALERI AKTIVITAS ============== -->
+  <section class="section-padding bg-white">
+    <div class="container-max">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-text-dark mb-4" data-aos="fade-up">
+        Galeri Aktivitas Kami
+      </h2>
+      <p class="text-center text-text-gray mb-12 text-lg" data-aos="fade-up">
+        Bukti nyata operasional dan dedikasi kami
+      </p>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" data-aos="fade-up">
+        <div class="bg-gray-200 rounded-lg overflow-hidden h-48 md:h-64">
+          <img src="https://images.unsplash.com/photo-1586985289688-cacf38928106?w=400&h=400&fit=crop" alt="Gudang" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+        </div>
+        <div class="bg-gray-200 rounded-lg overflow-hidden h-48 md:h-64">
+          <img src="https://images.unsplash.com/photo-1608889335941-33ac5f46b774?w=400&h=400&fit=crop" alt="Rak Produk" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+        </div>
+        <div class="bg-gray-200 rounded-lg overflow-hidden h-48 md:h-64 md:col-span-2">
+          <img src="https://images.unsplash.com/photo-1552088113-892e1a50b95d?w=800&h=400&fit=crop" alt="Pengiriman" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+        </div>
+        <div class="bg-gray-200 rounded-lg overflow-hidden h-48 md:h-64 md:col-span-2">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop" alt="Tim Kerja" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+        </div>
+        <div class="bg-gray-200 rounded-lg overflow-hidden h-48 md:h-64">
+          <img src="https://images.unsplash.com/photo-1553531087-b25a0b9a68e8?w=400&h=400&fit=crop" alt="Bongkar Muat" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+        </div>
+        <div class="bg-gray-200 rounded-lg overflow-hidden h-48 md:h-64">
+          <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=400&h=400&fit=crop" alt="Packaging" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 10: CARA PEMESANAN ============== -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-max">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-text-dark mb-4" data-aos="fade-up">
+        Cara Pemesanan
+      </h2>
+      <p class="text-center text-text-gray mb-12 text-lg" data-aos="fade-up">
+        Proses pemesanan yang mudah dan cepat
+      </p>
+      
+      <!-- Desktop Timeline -->
+      <div class="hidden md:block" data-aos="fade-up">
+        <div class="flex items-center justify-between mb-12">
+          <div class="flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-14 h-14 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold text-lg mb-4">1</div>
+              <h3 class="font-bold text-text-dark text-center mb-2">Hubungi WhatsApp</h3>
+              <p class="text-text-gray text-center text-sm">Klik tombol WhatsApp atau chat ke nomor kami</p>
+            </div>
+          </div>
+          <div class="flex-1 h-1 bg-primary-blue mx-2"></div>
+          <div class="flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-14 h-14 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold text-lg mb-4">2</div>
+              <h3 class="font-bold text-text-dark text-center mb-2">Pilih Produk</h3>
+              <p class="text-text-gray text-center text-sm">Pilih produk yang diinginkan dan jumlahnya</p>
+            </div>
+          </div>
+          <div class="flex-1 h-1 bg-primary-blue mx-2"></div>
+          <div class="flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-14 h-14 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold text-lg mb-4">3</div>
+              <h3 class="font-bold text-text-dark text-center mb-2">Konfirmasi Pesanan</h3>
+              <p class="text-text-gray text-center text-sm">Kami akan konfirmasi dan meminta detail pengiriman</p>
+            </div>
+          </div>
+          <div class="flex-1 h-1 bg-primary-blue mx-2"></div>
+          <div class="flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-14 h-14 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold text-lg mb-4">4</div>
+              <h3 class="font-bold text-text-dark text-center mb-2">Pengiriman</h3>
+              <p class="text-text-gray text-center text-sm">Produk akan dikirim sesuai jadwal</p>
+            </div>
+          </div>
+          <div class="flex-1 h-1 bg-primary-blue mx-2"></div>
+          <div class="flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-14 h-14 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold text-lg mb-4">5</div>
+              <h3 class="font-bold text-text-dark text-center mb-2">Pesanan Diterima</h3>
+              <p class="text-text-gray text-center text-sm">Pesanan tiba dengan aman dan memuaskan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Timeline -->
+      <div class="md:hidden space-y-6" data-aos="fade-up">
+        <div class="flex gap-4">
+          <div class="w-14 h-14 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-text-dark mb-1">Hubungi WhatsApp</h3>
+            <p class="text-text-gray text-sm">Klik tombol WhatsApp atau chat ke nomor kami</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-14 h-14 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-text-dark mb-1">Pilih Produk</h3>
+            <p class="text-text-gray text-sm">Pilih produk yang diinginkan dan jumlahnya</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-14 h-14 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-text-dark mb-1">Konfirmasi Pesanan</h3>
+            <p class="text-text-gray text-sm">Kami akan konfirmasi dan meminta detail pengiriman</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-14 h-14 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-text-dark mb-1">Pengiriman</h3>
+            <p class="text-text-gray text-sm">Produk akan dikirim sesuai jadwal</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-14 h-14 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">5</div>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-text-dark mb-1">Pesanan Diterima</h3>
+            <p class="text-text-gray text-sm">Pesanan tiba dengan aman dan memuaskan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 11: AREA LAYANAN ============== -->
+  <section class="section-padding bg-white">
+    <div class="container-max">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-text-dark mb-4" data-aos="fade-up">
+        Area Layanan Kami
+      </h2>
+      <p class="text-center text-text-gray mb-12 text-lg" data-aos="fade-up">
+        Melayani pengiriman ke berbagai kota di sekitar Malang
+      </p>
+      
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- Areas List -->
+        <div data-aos="fade-right">
+          <div class="space-y-4">
+            <div class="flex items-center gap-3 p-4 bg-light-blue rounded-lg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class="font-semibold text-text-dark">Kota Malang</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-light-blue rounded-lg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class="font-semibold text-text-dark">Kabupaten Malang</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-light-blue rounded-lg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class="font-semibold text-text-dark">Batu</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-light-blue rounded-lg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class="font-semibold text-text-dark">Singosari</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-light-blue rounded-lg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class="font-semibold text-text-dark">Lawang</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-light-blue rounded-lg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class="font-semibold text-text-dark">Dau</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 bg-light-blue rounded-lg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class="font-semibold text-text-dark">Kepanjen</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Map Placeholder -->
+        <div data-aos="fade-left">
+          <div class="bg-light-blue rounded-lg overflow-hidden shadow-lg aspect-square flex items-center justify-center">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" stroke="#2563EB" stroke-width="2" opacity="0.3">
+              <path d="M100 20L140 60L140 120Q100 150 60 120L60 60Z"></path>
+              <circle cx="100" cy="80" r="8" fill="#2563EB"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 12: FAQ ============== -->
+  <section id="faq" class="section-padding bg-gray-50">
+    <div class="container-max">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-text-dark mb-4" data-aos="fade-up">
+        Pertanyaan Umum
+      </h2>
+      <p class="text-center text-text-gray mb-12 text-lg" data-aos="fade-up">
+        Jawaban untuk pertanyaan yang sering diajukan
+      </p>
+      
+      <div class="max-w-2xl mx-auto space-y-4" data-aos="fade-up">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item bg-white rounded-lg overflow-hidden shadow-sm">
+          <button class="faq-button w-full px-6 py-4 flex justify-between items-center hover:bg-light-blue transition">
+            <h3 class="font-bold text-text-dark text-left">Apakah melayani pembelian ecer?</h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-text-gray">
+            <p>Ya, kami melayani pembelian ecer untuk kebutuhan pribadi. Tidak ada minimum order untuk pembelian ecer.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item bg-white rounded-lg overflow-hidden shadow-sm">
+          <button class="faq-button w-full px-6 py-4 flex justify-between items-center hover:bg-light-blue transition">
+            <h3 class="font-bold text-text-dark text-left">Apakah bisa pembelian grosir?</h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-text-gray">
+            <p>Tentu saja! Kami menyediakan paket grosir dengan harga khusus untuk pembelian dalam jumlah besar.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item bg-white rounded-lg overflow-hidden shadow-sm">
+          <button class="faq-button w-full px-6 py-4 flex justify-between items-center hover:bg-light-blue transition">
+            <h3 class="font-bold text-text-dark text-left">Apakah ada minimum order?</h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-text-gray">
+            <p>Untuk pembelian ecer tidak ada minimum order. Untuk pembelian grosir, minimum order tergantung produk yang dipilih.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item bg-white rounded-lg overflow-hidden shadow-sm">
+          <button class="faq-button w-full px-6 py-4 flex justify-between items-center hover:bg-light-blue transition">
+            <h3 class="font-bold text-text-dark text-left">Bagaimana cara mengetahui harga terbaru?</h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-text-gray">
+            <p>Hubungi kami melalui WhatsApp untuk mengetahui harga terbaru. Tim kami siap memberikan penawaran terbaik untuk Anda.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item bg-white rounded-lg overflow-hidden shadow-sm">
+          <button class="faq-button w-full px-6 py-4 flex justify-between items-center hover:bg-light-blue transition">
+            <h3 class="font-bold text-text-dark text-left">Apakah melayani pengiriman ke kantor?</h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-text-gray">
+            <p>Ya, kami melayani pengiriman ke kantor, sekolah, hotel, restoran, dan tempat bisnis lainnya di area Malang.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-item bg-white rounded-lg overflow-hidden shadow-sm">
+          <button class="faq-button w-full px-6 py-4 flex justify-between items-center hover:bg-light-blue transition">
+            <h3 class="font-bold text-text-dark text-left">Apakah bisa langganan rutin?</h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-icon">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4 text-text-gray">
+            <p>Ya, kami menyediakan layanan langganan rutin. Hubungi kami untuk mengatur jadwal pengiriman regular sesuai kebutuhan Anda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 13: TENTANG KAMI ============== -->
+  <section id="tentang" class="section-padding bg-white">
+    <div class="container-max">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Image -->
+        <div data-aos="fade-up">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=600&fit=crop" alt="Tentang Kami" class="rounded-xl shadow-lg w-full">
+        </div>
+        
+        <!-- Content -->
+        <div data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold text-text-dark mb-6">
+            Tentang Elang Water
+          </h2>
+          
+          <div class="space-y-4 text-text-gray mb-8">
+            <p class="leading-relaxed">
+              Elang Water adalah distributor air minum kemasan terlengkap yang berkomitmen untuk memenuhi kebutuhan minuman berkualitas untuk semua segmen bisnis di Malang dan sekitarnya. Dengan pengalaman bertahun-tahun di industri ini, kami memahami kebutuhan pelanggan kami.
+            </p>
+            <p class="leading-relaxed">
+              Kami berkomitmen untuk memberikan produk berkualitas, layanan terbaik, dan harga kompetitif kepada setiap pelanggan setia kami.
+            </p>
+          </div>
+
+          <div class="space-y-4 mb-8">
+            <div class="flex gap-4">
+              <div class="w-8 h-8 bg-primary-blue text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-text-dark mb-1">Visi</h3>
+                <p>Menjadi distributor air minum kemasan pilihan utama di Malang dengan kualitas terbaik dan pelayanan terpercaya.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="w-8 h-8 bg-primary-blue text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-text-dark mb-1">Misi</h3>
+                <p>Menyediakan produk berkualitas dengan harga kompetitif, pengiriman cepat, dan layanan pelanggan yang ramah dan responsif.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 14: CTA PENUTUP ============== -->
+  <section class="section-padding bg-gradient-to-r from-primary-blue to-secondary-blue text-white">
+    <div class="container-max text-center" data-aos="zoom-in">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Butuh Air Minum Kemasan untuk Usaha atau Kantor?
+      </h2>
+      <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+        Hubungi tim Elang Water sekarang dan dapatkan informasi produk serta harga terbaru.
+      </p>
+      <a href="https://wa.me/6285256781234" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-blue rounded-lg font-bold hover:bg-gray-100 transition">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        Hubungi WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ============== SECTION 15: FOOTER ============== -->
+  <footer class="bg-text-dark text-white">
+    <div class="section-padding">
+      <div class="container-max grid md:grid-cols-5 gap-8 mb-8">
+        <!-- Kolom 1 -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-10 h-10 bg-primary-blue rounded-lg flex items-center justify-center">
+              <span class="font-bold text-lg">E</span>
+            </div>
+            <span class="font-bold">Elang Water</span>
+          </div>
+          <p class="text-gray-400 text-sm">Distributor air minum kemasan terlengkap di Malang dengan produk berkualitas dan harga kompetitif.</p>
+        </div>
+
+        <!-- Kolom 2 -->
+        <div>
+          <h3 class="font-bold mb-4">Menu Cepat</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="#beranda" class="hover:text-white transition">Beranda</a></li>
+            <li><a href="#produk" class="hover:text-white transition">Produk</a></li>
+            <li><a href="#testimoni" class="hover:text-white transition">Testimoni</a></li>
+            <li><a href="#tentang" class="hover:text-white transition">Tentang Kami</a></li>
+            <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3 -->
+        <div>
+          <h3 class="font-bold mb-4">Kategori Produk</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="#produk" class="hover:text-white transition">Air Mineral</a></li>
+            <li><a href="#produk" class="hover:text-white transition">Air Galon</a></li>
+            <li><a href="#produk" class="hover:text-white transition">Teh Kemasan</a></li>
+            <li><a href="#produk" class="hover:text-white transition">Minuman Isotonik</a></li>
+            <li><a href="#produk" class="hover:text-white transition">Kopi Siap Minum</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 4 -->
+        <div>
+          <h3 class="font-bold mb-4">Kontak</h3>
+          <div class="space-y-3 text-gray-400 text-sm">
+            <p class="flex items-start gap-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="flex-shrink-0 mt-1">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              </svg>
+              <span>Jl. Jendral Basuki Rahmat, Malang</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>(0341) 555-0123</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>0852-5678-1234</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-10 5L2 7"></path>
+              </svg>
+              <span>info@elangwater.com</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Kolom 5 -->
+        <div>
+          <h3 class="font-bold mb-4">Google Maps</h3>
+          <div class="bg-gray-700 rounded-lg aspect-square flex items-center justify-center">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" opacity="0.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+        <p class="mb-2">&copy; 2024 Elang Water. Semua hak dilindungi.</p>
+        <p class="space-x-4">
+          <a href="#" class="hover:text-white transition">Kebijakan Privasi</a>
+          <span>|</span>
+          <a href="#" class="hover:text-white transition">Syarat & Ketentuan</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.396.0/dist/umd/lucide.min.js"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: false,
+      offset: 100
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Initialize Swiper for Brands
+    const brandSwiper = new Swiper('.brand-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.brand-swiper .swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 5,
+        },
+      },
+    });
+
+    // Initialize Swiper for Testimonials
+    const testimonialSwiper = new Swiper('.testimonial-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      pagination: {
+        el: '.testimonial-swiper .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    // Counter Animation
+    function animateCounter(element, target, duration = 2000) {
+      let current = 0;
+      const increment = target / (duration / 16);
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          element.textContent = Math.floor(target);
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(current);
+        }
+      }, 16);
+    }
+
+    // Trigger counters when visible
+    const counters = document.querySelectorAll('.counter');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          entry.target.classList.add('counted');
+          const target = parseInt(entry.target.dataset.target);
+          animateCounter(entry.target, target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => observer.observe(counter));
+
+    // FAQ Accordion
+    const faqButtons = document.querySelectorAll('.faq-button');
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const answer = faqItem.querySelector('.faq-answer');
+        const icon = button.querySelector('.faq-icon');
+
+        // Close other FAQ items
+        document.querySelectorAll('.faq-item').forEach(item => {
+          if (item !== faqItem) {
+            item.querySelector('.faq-answer').classList.add('hidden');
+            item.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+          }
+        });
+
+        // Toggle current FAQ
+        answer.classList.toggle('hidden');
+        icon.style.transform = answer.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+      });
+    });
+
+    // Product Filter
+    const categoryTabs = document.querySelectorAll('.category-tab');
+    const productCards = document.querySelectorAll('.product-card');
+
+    categoryTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const category = tab.dataset.category;
+
+        // Update active tab
+        categoryTabs.forEach(t => {
+          t.classList.remove('text-white', 'bg-primary-blue');
+          t.classList.add('text-text-gray', 'bg-white', 'border-2', 'border-gray-200');
+        });
+        tab.classList.add('text-white', 'bg-primary-blue');
+        tab.classList.remove('text-text-gray', 'bg-white', 'border-2', 'border-gray-200');
+
+        // Filter products
+        productCards.forEach(card => {
+          if (category === 'all' || card.dataset.category === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Add WhatsApp functionality to all "Tanya Harga" buttons
+    document.querySelectorAll('.product-card button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const productName = btn.closest('.product-card').querySelector('h3').textContent;
+        const message = `Halo, saya ingin tahu harga ${productName}`;
+        window.location.href = `https://wa.me/6285256781234?text=${encodeURIComponent(message)}`;
+      });
+    });
+  </script>
+</body>
+</html>
