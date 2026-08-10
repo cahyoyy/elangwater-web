@@ -312,7 +312,7 @@
       .review-card { position: relative; }
       .review-card:hover .review-tooltip { display: block; }
 
-      /* Hero section mobile-only center, tablet & desktop left/start */
+      /* Responsive Alignment & Grid Rules */
       @media (max-width: 767px) {
         .hero-text-container,
         .hero-text-container h1,
@@ -323,7 +323,11 @@
         .hero-cta-buttons {
           justify-content: center !important;
         }
+        .gallery-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
       }
+
       @media (min-width: 768px) {
         .hero-text-container,
         .hero-text-container h1,
@@ -334,13 +338,6 @@
         .hero-cta-buttons {
           justify-content: flex-start !important;
         }
-      /* Gallery grid: 2 columns on mobile (<768px), 4 columns on tablet & desktop (>=768px) */
-      @media (max-width: 767px) {
-        .gallery-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        }
-      }
-      @media (min-width: 768px) {
         .gallery-grid {
           grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
         }
