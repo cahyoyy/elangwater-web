@@ -1,0 +1,6 @@
+# Robots.txt for Elang Water Website
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://elangwater.com/sitemap.xml
