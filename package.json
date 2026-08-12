@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
-    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build": "npx tailwindcss@3 -i ./src/input.css -o ./dist/output.css",
+    "watch": "npx tailwindcss@3 -i ./src/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@tailwindcss/cli": "^4.3.1",
     "aos": "^2.3.4",
     "lucide": "^0.396.0",
     "swiper": "^11.1.0"
