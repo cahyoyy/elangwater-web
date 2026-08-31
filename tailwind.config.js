@@ -14,7 +14,7 @@ content: [
         'text-gray': '#6B7280',
       },
       fontFamily: {
-        'sans': ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
+        'sans': ['Geist', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         'xl': '0.875rem',
