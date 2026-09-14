@@ -5,7 +5,7 @@ const productsData = [
     id: "aqua-galon",
     category: "galon",
     name: "Aqua Galon",
-    image: "assets/images/products/aqua.png",
+    image: "assets/images/products/aqua-galon.jpg",
     variants: [
       { size: "Galon Isi 19L", retail: "21.000", grosir: "19.000", isi: "19 Liter Refill", badge: "" }
     ]
@@ -14,7 +14,7 @@ const productsData = [
     id: "cleo-galon",
     category: "galon",
     name: "Cleo Galon",
-    image: "assets/images/products/cleo.jpeg",
+    image: "assets/images/products/cleo-galon.jpg",
     variants: [
       { size: "Galon Isi 19L", retail: "21.000", grosir: "18.500", isi: "19 Liter Refill", badge: "" },
       { size: "Galon SP 15L", retail: "20.000", grosir: "19.000", isi: "15 Liter (Sekali Pakai)", badge: "" }
@@ -24,16 +24,17 @@ const productsData = [
     id: "cheers-galon",
     category: "galon",
     name: "Cheers Galon",
-    image: "assets/images/products/cheers.jpeg",
+    image: "assets/images/products/cheers-galon.jpg",
     variants: [
       { size: "Galon Isi 20L", retail: "19.000", grosir: "17.000", isi: "20 Liter Refill", badge: "" }
     ]
   },
   {
-    id: "crystaline-galon",
+    id: "crystalline-galon",
     category: "galon",
-    name: "Crystaline Galon",
-    image: "assets/images/products/crystaline.png",
+    name: "Crystalline Galon 19L",
+    image: "assets/images/products/crystalline-galon.jpg",
+    keywords: "crystalline crystaline crystalin galon 19l air mineral distributor grosir malang",
     variants: [
       { size: "Galon Isi 19L", retail: "20.000", grosir: "19.000", isi: "19 Liter Refill", badge: "" }
     ]
@@ -42,7 +43,7 @@ const productsData = [
     id: "le-minerale-galon",
     category: "galon",
     name: "Le Minerale Galon",
-    image: "assets/images/products/le-mineral.png",
+    image: "assets/images/products/le-minerale-galon.jpg",
     variants: [
       { size: "Galon SP 15L", retail: "22.000", grosir: "20.000", isi: "15 Liter (Sekali Pakai)", badge: "" }
     ]
@@ -51,7 +52,7 @@ const productsData = [
     id: "tulus-galon",
     category: "galon",
     name: "Tulus Galon",
-    image: "assets/images/products/tulus.jpeg",
+    image: "assets/images/products/tulus-galon.jpg",
     variants: [
       { size: "Galon SP 16L", retail: "19.000", grosir: "18.000", isi: "16 Liter (Sekali Pakai)", badge: "" }
     ]
@@ -60,7 +61,7 @@ const productsData = [
     id: "club-galon",
     category: "galon",
     name: "Club Galon",
-    image: "assets/images/logo/club.jpg",
+    image: "assets/images/products/club-galon.jpg",
     variants: [
       { size: "Galon SP 15L", retail: "19.000", grosir: "18.000", isi: "15 Liter (Sekali Pakai)", badge: "" }
     ]
@@ -69,7 +70,7 @@ const productsData = [
     id: "galon-kosong",
     category: "galon",
     name: "Galon Kosong",
-    image: "",
+    image: "assets/images/products/galon-kosong.jpg",
     variants: [
       { size: "Galon Kosong", retail: "45.000", grosir: "45.000", isi: "1 Pcs Galon Kosong", badge: "" }
     ]
@@ -80,7 +81,7 @@ const productsData = [
     id: "cleo-gelas",
     category: "gelas",
     name: "Cleo Air Gelas",
-    image: "assets/images/products/cleo.jpeg",
+    image: "assets/images/products/cleo-gelas.jpg",
     variants: [
       { size: "Cup 150ml", retail: "24.000", grosir: "22.500", isi: "40 / Karton", badge: "" },
       { size: "Gelas 220ml", retail: "26.500", grosir: "24.500", isi: "40 / Karton", badge: "" }
@@ -90,7 +91,7 @@ const productsData = [
     id: "club-gelas",
     category: "gelas",
     name: "Club Air Gelas",
-    image: "assets/images/logo/club.jpg",
+    image: "assets/images/products/club-gelas.jpeg",
     variants: [
       { size: "Cup 150ml", retail: "22.000", grosir: "20.000", isi: "48 / Karton", badge: "" },
       { size: "Gelas 220ml", retail: "25.000", grosir: "23.000", isi: "48 / Karton", badge: "" }
@@ -100,17 +101,18 @@ const productsData = [
     id: "cheers-gelas",
     category: "gelas",
     name: "Cheers Air Gelas",
-    image: "assets/images/products/cheers.jpeg",
+    image: "assets/images/products/cheers-gelas.jpg",
     variants: [
       { size: "Cup 150ml", retail: "21.000", grosir: "19.500", isi: "48 / Karton", badge: "" },
       { size: "Gelas 220ml", retail: "25.000", grosir: "23.000", isi: "48 / Karton", badge: "" }
     ]
   },
   {
-    id: "crystaline-gelas",
+    id: "crystalline-gelas",
     category: "gelas",
-    name: "Crystaline Gelas",
-    image: "assets/images/products/crystaline.png",
+    name: "Crystalline Air Gelas",
+    image: "assets/images/products/crystalline-gelas.jpg",
+    keywords: "crystalline crystaline crystalin gelas 220ml air mineral dus karton grosir malang",
     variants: [
       { size: "Gelas 220ml", retail: "24.000", grosir: "22.000", isi: "48 / Karton", badge: "" }
     ]
@@ -119,7 +121,7 @@ const productsData = [
     id: "orchid-gelas",
     category: "gelas",
     name: "Orchid Gelas",
-    image: "",
+    image: "assets/images/products/orchid-gelas.jpg",
     variants: [
       { size: "Gelas 220ml", retail: "19.000", grosir: "17.000", isi: "48 / Karton", badge: "" }
     ]
@@ -152,7 +154,7 @@ const productsData = [
     id: "cleo-botol",
     category: "botol",
     name: "Cleo Botol Mineral",
-    image: "assets/images/products/cleo.jpeg",
+    image: "assets/images/products/cleo-botol.jpg",
     variants: [
       { size: "220ml Imut", retail: "21.000", grosir: "19.000", isi: "24 / Pack", badge: "" },
       { size: "330ml", retail: "39.000", grosir: "37.000", isi: "24 / Karton", badge: "" },
@@ -166,18 +168,19 @@ const productsData = [
     id: "tulus-botol",
     category: "botol",
     name: "Tulus Air Mineral",
-    image: "assets/images/products/tulus.jpeg",
+    image: "assets/images/products/tulus-botol.jpg",
     variants: [
-      { size: "330ml", retail: "41.000", grosir: "3 BONUS 1", isi: "24 / Karton", badge: "PROMO 3+1" },
-      { size: "600ml", retail: "47.000", grosir: "3 BONUS 1", isi: "24 / Karton", badge: "PROMO 3+1" },
-      { size: "1500ml", retail: "48.000", grosir: "3 BONUS 1", isi: "12 / Karton", badge: "PROMO 3+1" }
+      { size: "330ml", retail: "41.000", grosir: "3 BONUS 1", isi: "24 / Karton", badge: "" },
+      { size: "600ml", retail: "47.000", grosir: "3 BONUS 1", isi: "24 / Karton", badge: "" },
+      { size: "1500ml", retail: "48.000", grosir: "3 BONUS 1", isi: "12 / Karton", badge: "" }
     ]
   },
   {
-    id: "crystaline-botol",
+    id: "crystalline-botol",
     category: "botol",
-    name: "Crystaline Botol",
-    image: "assets/images/products/crystaline.png",
+    name: "Crystalline Botol Mineral",
+    image: "assets/images/products/crystalline.png",
+    keywords: "crystalline crystaline crystalin botol 330ml 600ml 1500ml air mineral dus karton grosir malang",
     variants: [
       { size: "330ml", retail: "38.000", grosir: "36.000", isi: "24 / Karton", badge: "" },
       { size: "600ml", retail: "46.000", grosir: "44.000", isi: "24 / Karton", badge: "" },
@@ -188,7 +191,7 @@ const productsData = [
     id: "cheers-botol",
     category: "botol",
     name: "Cheers Botol Mineral",
-    image: "assets/images/products/cheers.jpeg",
+    image: "assets/images/products/cheers-botol.jpg",
     variants: [
       { size: "220ml Imut", retail: "26.000", grosir: "24.000", isi: "24 / Karton", badge: "" },
       { size: "Alk 500ml", retail: "52.000", grosir: "50.000", isi: "24 / Karton", badge: "ALKALINE" },
@@ -200,7 +203,7 @@ const productsData = [
     id: "club-botol",
     category: "botol",
     name: "Club Botol Mineral",
-    image: "assets/images/logo/club.jpg",
+    image: "assets/images/products/club-botol.jpg",
     variants: [
       { size: "600ml", retail: "42.000", grosir: "40.000", isi: "24 / Karton", badge: "" },
       { size: "1500ml", retail: "42.000", grosir: "40.000", isi: "12 / Karton", badge: "" }
@@ -239,7 +242,7 @@ const productsData = [
     id: "teh-lemon-madu",
     category: "non-mineral",
     name: "Teh Lemon Madu",
-    image: "assets/images/products/teh-botol-sosro.jpeg",
+    image: "assets/images/products/lemon-madu.jpg",
     variants: [
       { size: "350ml", retail: "28.000", grosir: "26.000", isi: "12 / Pack", badge: "" }
     ]
@@ -257,7 +260,7 @@ const productsData = [
     id: "teh-kotak-ultra",
     category: "non-mineral",
     name: "Teh Kotak Ultrajaya",
-    image: "assets/images/products/ultra-milk.jpeg",
+    image: "assets/images/products/teh-kotak.jpg",
     variants: [
       { size: "250ml", retail: "84.000", grosir: "82.000", isi: "24 / Karton", badge: "" }
     ]
@@ -356,6 +359,8 @@ const PLACEHOLDER_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64
 </svg>`;
 
 // Render Catalog Grid
+let currentSearchQuery = "";
+
 function renderCatalog(categoryFilter = "all") {
   const gridContainer = document.getElementById("product-grid");
   if (!gridContainer) return;
@@ -364,11 +369,36 @@ function renderCatalog(categoryFilter = "all") {
   const limit = limitAttr ? parseInt(limitAttr, 10) : null;
 
   const filteredProducts = productsData.filter((product) => {
-    if (categoryFilter === "all") return true;
-    return product.category === categoryFilter;
+    const matchesCategory = categoryFilter === "all" || product.category === categoryFilter;
+    if (!matchesCategory) return false;
+
+    if (currentSearchQuery.trim() !== "") {
+      const q = currentSearchQuery.toLowerCase().trim();
+      const nameMatch = product.name.toLowerCase().includes(q);
+      const kwMatch = product.keywords ? product.keywords.toLowerCase().includes(q) : false;
+      const catMatch = product.category.toLowerCase().includes(q);
+      const varMatch = product.variants.some((v) => v.size.toLowerCase().includes(q) || v.isi.toLowerCase().includes(q));
+      return nameMatch || kwMatch || catMatch || varMatch;
+    }
+
+    return true;
   });
 
   const displayProducts = limit && limit > 0 ? filteredProducts.slice(0, limit) : filteredProducts;
+
+  if (displayProducts.length === 0) {
+    gridContainer.innerHTML = `
+      <div class="col-span-full py-12 text-center text-gray-500">
+        <svg class="w-12 h-12 mx-auto mb-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8" stroke-width="2"/>
+          <path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <p class="text-base font-semibold text-gray-700">Produk tidak ditemukan</p>
+        <p class="text-xs text-gray-400 mt-1">Coba kata kunci lain seperti "Crystalline", "Galon", atau "Gelas".</p>
+      </div>
+    `;
+    return;
+  }
 
   gridContainer.innerHTML = displayProducts
     .map((product) => {
@@ -383,14 +413,15 @@ function renderCatalog(categoryFilter = "all") {
       );
       const waUrl = `https://wa.me/6281262100800?text=${waText}`;
 
-      // Image or Placeholder
+      // Image or Placeholder with Rich SEO alt text
       const hasImage = product.image && product.image.length > 0;
+      const altText = `${product.name} ${activeVar.size} - Distributor Air Minum Kemasan Grosir Elang Water Malang`;
       const imageHTML = hasImage
-        ? `<img src="${product.image}" alt="${product.name}" class="max-h-[135px] sm:max-h-[195px] max-w-full w-auto h-auto object-contain transition-transform duration-300 hover:scale-105" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><div class="flex flex-col items-center justify-center w-full h-full" style="display:none;">${PLACEHOLDER_SVG}</div>`
+        ? `<img src="${product.image}" alt="${altText}" title="${product.name} Elang Water Malang" class="max-h-[135px] sm:max-h-[195px] max-w-full w-auto h-auto object-contain" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" /><div class="flex flex-col items-center justify-center w-full h-full" style="display:none;">${PLACEHOLDER_SVG}</div>`
         : `<div class="flex flex-col items-center justify-center w-full h-full">${PLACEHOLDER_SVG}</div>`;
 
       return `
-        <div class="bg-white rounded-2xl border border-gray-200/80 shadow-sm overflow-hidden flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5" data-category="${product.category}">
+        <div class="bg-white rounded-2xl border border-gray-200/80 shadow-sm overflow-hidden flex flex-col" data-category="${product.category}">
           <!-- Image Container (Clean White Background) -->
           <div class="bg-white h-40 sm:h-52 md:h-56 flex items-center justify-center p-2 sm:p-3 relative overflow-hidden">
             ${activeVar.badge ? `<span class="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 bg-amber-400 text-amber-950 text-[9px] sm:text-[10px] font-extrabold px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md uppercase tracking-wider shadow-sm z-10">${activeVar.badge}</span>` : ""}
@@ -475,5 +506,60 @@ document.addEventListener("DOMContentLoaded", () => {
       renderCatalog(tab.dataset.category);
     });
   });
+
+  // Search Input Listener
+  const searchInput = document.getElementById("product-search");
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      currentSearchQuery = e.target.value;
+      const activeTab = document.querySelector(".category-tab.active-tab");
+      const category = activeTab ? activeTab.dataset.category : "all";
+      renderCatalog(category);
+    });
+  }
 });
+
+// Header Navbar Auto-Hide on Scroll Down & Reappear after 1000ms Delay
+(function initNavbarScrollBehavior() {
+  let lastScrollTop = 0;
+  let navbarTimer = null;
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const headerEl = document.querySelector("header");
+    if (!headerEl) return;
+
+    // Apply smooth CSS transition for transform
+    headerEl.style.transition = "transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)";
+
+    window.addEventListener(
+      "scroll",
+      () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Reset 1000ms timer on active scrolling
+        if (navbarTimer) {
+          clearTimeout(navbarTimer);
+          navbarTimer = null;
+        }
+
+        if (scrollTop > lastScrollTop && scrollTop > 80) {
+          // Scrolling DOWN -> Hide navbar smoothly upwards
+          headerEl.style.transform = "translateY(-100%)";
+
+          // Set 1000ms timer to bring navbar back down smoothly
+          navbarTimer = setTimeout(() => {
+            headerEl.style.transform = "translateY(0)";
+          }, 500);
+        } else {
+          // Scrolling UP or at top -> Stay visible
+          headerEl.style.transform = "translateY(0)";
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      },
+      { passive: true }
+    );
+  });
+})();
+
 
